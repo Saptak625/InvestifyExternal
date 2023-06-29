@@ -16,6 +16,4 @@ def index():
             'Connection': 'keep-alive',
         }
     html = requests.get(url, headers=headers).content 
-    with open('insider_data.html', 'wb') as f:
-        f.write(html)
     return html
